@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+      xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.desktoppenjualan.LoginController">
+
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: darkBlue;">
+            <children>
+                <ImageView fitHeight="76.0" fitWidth="153.0"
+                           layoutX="47.0" layoutY="57.0" pickOnBounds="true"
+                           preserveRatio="true">
+                </ImageView>
+                <Label layoutX="42.0" layoutY="208.0" text="62+ 82323350013"
+                       textFill="#f5eaea">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="14.0" layoutY="236.0"
+                       text="AryanGanteng@support.com" textFill="#f5eaea">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="400.0" >
+            <children>
+                <Label layoutX="48.0" layoutY="165.0" text="User Name"
+                       textFill="#171717">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="76.0" fitWidth="153.0"
+                           layoutX="153.0" layoutY="44.0" pickOnBounds="true"
+                           preserveRatio="true">
+                </ImageView>
+                <Label layoutX="48.0" layoutY="210.0" text="Password"
+                       textFill="#171717">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="tfUser" layoutX="173.0" layoutY="161.0"/>
+                <TextField fx:id="tfPassword" layoutX="173.0"
+                           layoutY="206.0" />
+                <Button fx:id="btnLogin" layoutX="130.0" layoutY="266.0"
+                        mnemonicParsing="false" onAction="#prosesLogin" prefHeight="32.0"
+                        prefWidth="123.0" style="-fx-background-color: darkBlue; -fx-cursor:hand;" text="Login" textAlignment="CENTER" textFill="#f8f5f5">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Label layoutX="130.0" layoutY="318.0" text="not a user ?" textFill="#171717">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Button fx:id="btnsignUp" layoutX="229.0" layoutY="312.0"
+                        mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" style="-
+fx-background-color: transparent; -fx-cursor: hand;" text="Sign Up" textFill="#0d0980" underline="true">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</HBox>
